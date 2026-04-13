@@ -9,14 +9,15 @@ export default function Navbar(){
 
     return (
         <nav>
-            <Link to="/" className="title">Bethany Helwig</Link>
+            <span className="title">Bethany Helwig</span>
             <div className="nav-links">
                 <ul>
-                    <li><NavLink to="about">About</NavLink></li>
-                    <li><NavLink to="books">Books</NavLink></li>
-                    <li><NavLink to="Contact">Contact</NavLink></li>
-                    {/* <li><NavLink to="Events">Events</NavLink></li>
-                    <li><NavLink to="Extras">Extras</NavLink></li> */}
+                    <li><NavLink to="/" className={({isActive}) => isActive ? "link-active" : null}>Home</NavLink></li>
+                    <li><NavLink to="about" className={({isActive}) => isActive ? "link-active" : null}>About</NavLink></li>
+                    <li><NavLink to="books" className={({isActive}) => isActive ? "link-active" : null}>Books</NavLink></li>
+                    <li><NavLink to="Contact" className={({isActive}) => isActive ? "link-active" : null}>Contact</NavLink></li>
+                    {/* <li><NavLink to="Events" className={({isActive}) => isActive ? "link-active" : null}>Events</NavLink></li>
+                    <li><NavLink to="Extras" className={({isActive}) => isActive ? "link-active" : null}>Extras</NavLink></li> */}
                 </ul>
                 <button id="theme-toggle-btn" onClick={toggleTheme} className="theme-btn">
                     {theme === 'light'? 
