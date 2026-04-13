@@ -1,0 +1,147 @@
+/* -- FONTS -- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+/* -- VARIABLES -- */
+:root {
+	--background-primary-color: #181b24;
+	--text-primary-color: #d1dddf;
+	--link: #99D98C;
+	--link-hover: #D9ED92;
+	--button: #1A759F;
+	--header-overlay: rgba(255, 255, 255, 0.15);
+}
+
+[data-theme="light"]{
+	--background-primary-color: whitesmoke;
+	--text-primary-color: #211E23;
+	--link: #53abfd;
+	--link-hover: #CDB4DB;
+	--button: #BDE0FE;
+	--header-overlay: rgba(255, 255, 255, 0.8);
+}
+
+/* -- BASE -- */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--background-primary-color);
+	color: var(--text-primary-color);
+	margin: 0;
+	padding: 0;
+	font-family: "Montserrat", sans-serif;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	padding: 1em;
+	background-color: var(--header-overlay);
+}
+
+.nav-links {
+	display: flex;
+	align-items: center;
+}
+
+.nav-links ul {
+	display: flex;
+	flex-direction: row;
+	gap: 1.5em;
+	list-style: none;
+	margin-right: 1em;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-top: 3em;
+}
+
+footer {
+	text-align: center;
+	margin-top: auto;
+}
+
+#root {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 100wh;
+	height: 100vh;
+}
+
+.pink-accent {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgb(255, 143, 162);
+	width: 300px;
+	height: 300px;
+	opacity: .4;
+	filter: blur(100px);
+	z-index: -1;
+}
+
+.purple-accent {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-color: rgb(143, 85, 219);
+	width: 300px;
+	height: 300px;
+	opacity: .3;
+	filter: blur(100px);
+	z-index: -1;
+}
+
+.green-accent {
+	position: absolute;
+	top: 50%;
+	left:30%;
+	translate: -50%;
+	background-color: rgb(85, 219, 125);
+	width: 400px;
+	height: 400px;
+	opacity: .2;
+	filter: blur(100px);
+	z-index: -1;
+}
+
+a {
+	text-decoration: none;
+	font-weight: 600;
+	color: var(--link);
+}
+
+a:hover {
+	color: var(--link-hover);
+}
+
+.theme-btn {
+	/* background-color: rgba(0, 255, 255, 0.205); */
+	background-color: var(--button);
+	border: none;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.theme-btn i {
+	color: var(--text-primary-color);
+}
+
+.theme-btn:hover {
+	background-color: rgba(0, 255, 255, 0.562);
+}
+
+.title {
+	font-family: "Shadows Into Light", cursive;
+	font-size: 3rem;
+}
