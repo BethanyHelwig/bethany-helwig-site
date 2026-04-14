@@ -2,6 +2,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
+/* -- PASTEL COLOR PALETTE -- */
+/* 
+Purple: #CDB4DB 
+Pale Pink: #FFC8DD
+Pink: #FFAFCC
+Light Blue: #BDE0FE
+Blue: #A2D2FF
+*/
+
+/* -- MEADOW GREEN COLOR PALETTE -- */
+/*
+Pale Yellow Green: #D9ED92
+Pale Green: #B5E48C
+Green: #99D98C
+Darker Green: #76C893
+Next Green: #52B69A
+Teal: #34A0A4
+Blue: #168AAD
+Darker Blue: #1A759F
+Next Blue: #1E6091
+Next Blue: #184E77
+*/
+
 /* -- VARIABLES -- */
 :root {
 	--background-primary-color: #181b24;
@@ -187,6 +210,15 @@ a:hover::after {
 .purchase-links {
 	display: flex;
 	justify-content: space-around;
+}
+
+h3 {
+	text-align: center;
+}
+
+.subtitle {
+	font-weight: 500;
+	font-style: italic;
 }
 
 /** UTILITIES **/
