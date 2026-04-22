@@ -90,6 +90,7 @@ main {
 
 h1, h2 {
 	text-align: center;
+	margin: 0 0 10px;
 }
 
 footer {
@@ -218,8 +219,22 @@ h3 {
 }
 
 .subtitle {
+	margin-top: 0;
+	font-size: 1.2rem;
 	font-weight: 500;
 	font-style: italic;
+}
+
+.extras-list {
+	text-align: center;
+}
+
+ul {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	padding: 0;
+	gap: 0.5em;
 }
 
 /** UTILITIES **/
