@@ -2,8 +2,20 @@ export default function Contact() {
     return (
         <main>
             <h1>Contact</h1>
-            <a href="https://www.facebook.com/AuthorBethanyHelwig" target="_blank">Facebook Page</a>
-            <a href="https://www.instagram.com/authorbethanyhelwig/" target="_blank">Instagram</a>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/AuthorBethanyHelwig" 
+                        target="_blank" rel="noopener noreferrer"
+                        aria-label="Facebook (opens in a new tab)"
+                        >Facebook Page</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/authorbethanyhelwig/" 
+                        target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram (opens in a new tab)"
+                        >Instagram</a>
+                </li>
+            </ul>
         </main>
     )
 }

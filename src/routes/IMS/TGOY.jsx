@@ -2,20 +2,35 @@ export default function TGOY(){
     return (
         <main>
             <div className="flex-row">
-                <div>
-                    <img src="/TGOY-bookpage.jpg" className="img-shadow" />
-                </div>
-                <div>
+                <section aria-label="Cover image">
+                    <img src="/TGOY-bookpage.jpg" className="img-shadow" alt="Cover of The Ghosts of Yesteryear" />
+                </section>
+                <section aria-label="Book description section">
                     <h1>The Ghosts of Yesteryear</h1>
-                    <h3 className="subtitle">Book #3, International Monsters Slayers</h3>
+                    <h2 className="subtitle">Book #3, International Monsters Slayers</h2>
                     <div className="purchase-links">
-                        <a href="https://www.amazon.com/Ghosts-Yesteryear-International-Monster-Slayers-ebook/dp/B074YDTZ6R/ref=sr_1_1?ie=UTF8&qid=1503325787&sr=8-1&keywords=the+ghosts+of+yesteryear" target="_blank">Amazon</a> |
-                        <a href="https://www.barnesandnoble.com/w/the-ghosts-of-yesteryear-bethany-helwig/1126976775?ean=9780998124773" target="_blank">Barnes & Noble</a> |
-                        <a href="https://www.kobo.com/us/en/ebook/the-ghosts-of-yesteryear" target="_blank">Kobo</a> |
-                        <a href="http://www.booksamillion.com/p/Ghosts-Yesteryear/Bethany-Helwig/9780998124773?id=7082062501545" target="_blank">Books-A-Million</a> |
-                        <a href="https://www.indiebound.org/book/9780998124773" target="_blank">IndieBound</a>
+                        <a href="https://www.amazon.com/Ghosts-Yesteryear-International-Monster-Slayers-ebook/dp/B074YDTZ6R/ref=sr_1_1?ie=UTF8&qid=1503325787&sr=8-1&keywords=the+ghosts+of+yesteryear" 
+                            target="_blank" rel="noopener noreferrer"
+                            aria-label="Buy on Amazon (opens in a new tab)"
+                            >Amazon</a> |
+                        <a href="https://www.barnesandnoble.com/w/the-ghosts-of-yesteryear-bethany-helwig/1126976775?ean=9780998124773" 
+                            target="_blank" rel="noopener noreferrer"
+                            aria-label="Buy on Barnes & Noble (opens in a new tab)"
+                            >Barnes & Noble</a> |
+                        <a href="https://www.kobo.com/us/en/ebook/the-ghosts-of-yesteryear" 
+                            target="_blank" rel="noopener noreferrer"
+                            aria-label="Buy on Kobo (opens in a new tab)"
+                            >Kobo</a> |
+                        <a href="http://www.booksamillion.com/p/Ghosts-Yesteryear/Bethany-Helwig/9780998124773?id=7082062501545" 
+                            target="_blank" rel="noopener noreferrer"
+                            aria-label="Buy on Books-A-Million (opens in a new tab)"
+                            >Books-A-Million</a> |
+                        <a href="https://www.indiebound.org/book/9780998124773" 
+                            target="_blank" rel="noopener noreferrer"
+                            aria-label="Buy on IndieBound (opens in a new tab)"
+                            >IndieBound</a>
                     </div>
-                    <p style={{textAlign: "center"}}>Add it to your shelf on <a href="https://www.goodreads.com/book/show/32050064-the-ghosts-of-yesteryear">Goodreads</a>.</p>
+                    <p style={{textAlign: "center"}}>Add it to your shelf on <a href="https://www.goodreads.com/book/show/32050064-the-ghosts-of-yesteryear" target="_blank" rel="noopener noreferrer" aria-label="Add on Goodreads (opens in a new tab)">Goodreads</a>.</p>
                     <p style={{textAlign: "center"}}>Finalist of the 2020 Minnesota Author Project.</p>
                     <p>A month has passed since Phoenix made her bargain with Dasc—a life debt 
                         in exchange for the return of Jefferson’s lost daughter. After a harrowing 
@@ -31,13 +46,23 @@ export default function TGOY(){
                         into question. When no one is who they seem, deciding who to trust becomes 
                         a dangerous game—and one wrong step could shatter everything.</p>
                     <h3>Extras:</h3>
-                        <p style={{textAlign: "center"}}>
-                            <a href="https://www.pinterest.com/phoenixverus/ims-3-the-ghosts-of-yesteryear/" target="_blank">Pinterest Inspiration Board</a>
-                        </p>
-                        <p style={{textAlign: "center"}}>
-                            <a href="https://open.spotify.com/playlist/6btsT9HfWgWjj0jbwQm8Xr?si=1487f0a9f4da4ddf" target="_blank">Spotify Book Playlist</a>
-                        </p>
-                </div>
+                    <div className="extras-list">
+                        <ul>
+                            <li>
+                                <a href="https://www.pinterest.com/phoenixverus/ims-3-the-ghosts-of-yesteryear/" 
+                                    target="_blank"  rel="noopener noreferrer"
+                                    aria-label="View Pinterest board (opens in a new tab)"
+                                    >Pinterest Inspiration Board</a>
+                            </li>
+                            <li>
+                                <a href="https://open.spotify.com/playlist/6btsT9HfWgWjj0jbwQm8Xr?si=1487f0a9f4da4ddf" 
+                                    target="_blank"  rel="noopener noreferrer"
+                                    aria-label="Spotify playlist (opens in a new tab)"
+                                    >Spotify Book Playlist</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
             </div>
         </main>
     )
