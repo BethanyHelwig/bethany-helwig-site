@@ -19,7 +19,7 @@ export default function Navbar(){
                     {/* <li><NavLink to="Events" className={({isActive}) => isActive ? "link-active" : null}>Events</NavLink></li>
                     <li><NavLink to="Extras" className={({isActive}) => isActive ? "link-active" : null}>Extras</NavLink></li> */}
                 </ul>
-                <button id="theme-toggle-btn" onClick={toggleTheme} className="theme-btn">
+                <button id="theme-toggle-btn" onClick={toggleTheme} className="theme-btn" aria-label="Theme Toggle button">
                     {theme === 'light'? 
                         <i className="fa-solid fa-moon"></i> :
                         <i className="fa-solid fa-sun"></i>

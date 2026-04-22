@@ -38,8 +38,9 @@ Next Blue: #184E77
 [data-theme="light"]{
 	--background-primary-color: whitesmoke;
 	--text-primary-color: #211E23;
-	--link: #53abfd;
-	--link-hover: #CDB4DB;
+	/* --link: #53abfd; */
+	--link: #024F97;
+	--link-hover: #6C3F83;
 	--button: #BDE0FE;
 	--header-overlay: rgba(255, 255, 255, 0.8);
 }
