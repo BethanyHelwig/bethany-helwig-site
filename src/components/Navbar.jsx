@@ -1,23 +1,57 @@
 import { ThemeContext } from "./ThemeProvider"
 import { NavLink, Link } from "react-router-dom"
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
 
 export default function Navbar(){
 
-    // state values
     const { theme, toggleTheme } = useContext(ThemeContext)
+    const [menuOpen, setMenuOpen] = useState(false)
 
     return (
         <nav>
             <span className="title">Bethany Helwig</span>
-            <div className="nav-links">
+
+            {/* Hamburger button, shows for mobile size */}
+            <button
+                className="menu-btn"
+                onClick={() => setMenuOpen(!menuOpen)}
+                aria-label="Open navigation menu"
+            >
+                <i className="fa-solid fa-bars"></i>
+            </button>
+
+            <div className={`nav-links ${menuOpen ? "active" : ""}`}>
                 <ul>
-                    <li><NavLink to="/" className={({isActive}) => isActive ? "link-active" : null}>Home</NavLink></li>
-                    <li><NavLink to="about" className={({isActive}) => isActive ? "link-active" : null}>About</NavLink></li>
-                    <li><NavLink to="books" className={({isActive}) => isActive ? "link-active" : null}>Books</NavLink></li>
-                    <li><NavLink to="Contact" className={({isActive}) => isActive ? "link-active" : null}>Contact</NavLink></li>
-                    {/* <li><NavLink to="Events" className={({isActive}) => isActive ? "link-active" : null}>Events</NavLink></li>
-                    <li><NavLink to="Extras" className={({isActive}) => isActive ? "link-active" : null}>Extras</NavLink></li> */}
+                    <li>
+                        {/* Hamburger button, shows for mobile size */}
+                        <button
+                            className="menu-btn"
+                            onClick={() => setMenuOpen(!menuOpen)}
+                            aria-label="Open navigation menu"
+                        >
+                            <i className="fa-solid fa-bars"></i>
+                        </button>
+                    </li>
+                    <li><NavLink to="/" 
+                            className={({isActive}) => isActive ? "link-active" : null}
+                            onClick={() => setMenuOpen(false)}
+                        >Home</NavLink>
+                    </li>
+                    <li><NavLink to="about" 
+                            className={({isActive}) => isActive ? "link-active" : null}
+                            onClick={() => setMenuOpen(false)}
+                        >About</NavLink>
+                    </li>
+                    <li><NavLink to="books" 
+                            className={({isActive}) => isActive ? "link-active" : null}
+                            onClick={() => setMenuOpen(false)}
+                        >Books</NavLink>
+                    </li>
+                    <li><NavLink to="Contact" 
+                            className={({isActive}) => isActive ? "link-active" : null}
+                            onClick={() => setMenuOpen(false)}
+                        >Contact</NavLink>
+                    </li>
                 </ul>
                 <button id="theme-toggle-btn" onClick={toggleTheme} className="theme-btn" aria-label="Theme Toggle button">
                     {theme === 'light'? 
