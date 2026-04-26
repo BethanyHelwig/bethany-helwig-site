@@ -64,7 +64,20 @@ nav {
 	justify-content: space-around;
 	align-items: center;
 	padding: 1em;
-	background-color: var(--header-overlay);
+	/* background-color: var(--header-overlay); */
+	position: relative;
+}
+
+nav::after {
+	content: "";
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    width: 100%;
+    height: 240px;
+    background-color: var(--header-overlay);
+    clip-path: ellipse(95% 100% at 50% 0%);
+    z-index: -1;
 }
 
 .nav-links {
@@ -85,7 +98,7 @@ main {
 	flex-direction: column;
 	align-items: stretch;
 	justify-content: center;
-	padding: 3em 4em;
+	padding: 4em 4em;
 }
 
 h1, h2 {
@@ -332,7 +345,7 @@ ul {
 
 	/* LAYOUT */
 	main {
-		padding: 1em 2em;
+		padding: 3em 2em 1em;
 	}
 
 	/* change to column */
