@@ -264,6 +264,7 @@ ul {
 /** UTILITIES **/
 
 .flex-row {
+	margin-top: 2em;
 	display: flex;
 	flex-direction: row;
 	gap: 2em;
@@ -350,6 +351,7 @@ ul {
 
 	/* change to column */
 	.flex-row {
+		margin-top: 1em;
 		flex-direction: column;
 		gap: 1.5em;
 	}
